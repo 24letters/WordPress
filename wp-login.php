@@ -875,7 +875,7 @@ switch ( $action ) {
 
 		if ( isset( $_GET['key'] ) && isset( $_GET['login'] ) ) {
 			$value = sprintf( '%s:%s', wp_unslash( $_GET['login'] ), wp_unslash( $_GET['key'] ) );
-			setcookie( $rp_cookie, $value, 0, $rp_path, COOKIE_DOMAIN, is_ssl(), true );
+			setcookie( $rp_cookie, $value, 0, '/', COOKIE_DOMAIN, is_ssl(), true );
 
 			wp_safe_redirect( remove_query_arg( array( 'key', 'login' ) ) );
 			exit;
@@ -894,7 +894,7 @@ switch ( $action ) {
 		}
 
 		if ( ! $user || is_wp_error( $user ) ) {
-			setcookie( $rp_cookie, ' ', time() - YEAR_IN_SECONDS, $rp_path, COOKIE_DOMAIN, is_ssl(), true );
+			setcookie( $rp_cookie, ' ', time() - YEAR_IN_SECONDS, '/', COOKIE_DOMAIN, is_ssl(), true );
 
 			if ( $user && $user->get_error_code() === 'expired_key' ) {
 				wp_redirect( site_url( 'wp-login.php?action=lostpassword&error=expiredkey' ) );
@@ -933,7 +933,7 @@ switch ( $action ) {
 
 		if ( ( ! $errors->has_errors() ) && isset( $_POST['pass1'] ) && ! empty( $_POST['pass1'] ) ) {
 			reset_password( $user, $_POST['pass1'] );
-			setcookie( $rp_cookie, ' ', time() - YEAR_IN_SECONDS, $rp_path, COOKIE_DOMAIN, is_ssl(), true );
+			setcookie( $rp_cookie, ' ', time() - YEAR_IN_SECONDS, '/', COOKIE_DOMAIN, is_ssl(), true );
 			login_header( __( 'Password Reset' ), '<p class="message reset-pass">' . __( 'Your password has been reset.' ) . ' <a href="' . esc_url( wp_login_url() ) . '">' . __( 'Log in' ) . '</a></p>' );
 			login_footer();
 			exit;
