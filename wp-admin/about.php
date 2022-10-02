@@ -37,8 +37,6 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			</nav>
 		</div>
 
-		<hr />
-
 		<div class="about__section">
 			<div class="column">
 				<h2 class="aligncenter">
@@ -56,11 +54,9 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			</div>
 		</div>
 
-		<hr />
-
 		<div class="about__section has-2-columns">
-			<div class="column about__image is-vertically-aligned-center">
-				<img src="https://make.wordpress.org/core/files/2022/05/about-60-writing-improvements.png" alt="" />
+			<div class="column about__image is-vertically-aligned-top">
+				<img src="https://s.w.org/images/core/6.0/about-60-writing-improvements.png" alt="" />
 			</div>
 			<div class="column">
 				<h3>
@@ -88,16 +84,16 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php _e( 'Block themes now include the option to contain multiple style variations. This expands the new Style system even further and enables shortcuts to switch the look and feel of your site all within a single theme. You can change both the available settings, like the font weight, and the style options, like the default color palette. Change the look and feel of your site with just a few clicks.' ); ?>
 				</p>
 			</div>
-			<div class="column about__image is-vertically-aligned-center">
-				<img src="https://make.wordpress.org/core/files/2022/05/about-60-style-switcher.gif" alt="" />
+			<div class="column about__image is-vertically-aligned-top">
+				<img src="https://s.w.org/images/core/6.0/about-60-style-switching.gif" alt="" />
 			</div>
 		</div>
 
 		<div class="about__section has-1-column">
-			<div class="column about__image is-vertically-aligned-center">
-				<img src="https://make.wordpress.org/core/files/2022/05/about-60-templates.png" alt="" />
+			<div class="column about__image is-vertically-aligned-top">
+				<img src="https://s.w.org/images/core/6.0/about-60-templates.png" alt="" />
 			</div>
-			<div class="column">
+			<div class="column" style="padding-bottom:0">
 				<h3>
 					<?php _e( 'More Template Choices' ); ?>
 				</h3>
@@ -110,28 +106,28 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<div class="about__section has-3-columns">
 			<div class="column">
 				<div class="about__image">
-					<img src="https://make.wordpress.org/core/files/2022/05/about-60-sub-feature-1.png" alt="" />
+					<img src="https://s.w.org/images/core/6.0/about-60-sub-feature-1.png" alt="" />
 				</div>
 				<p><?php _e( 'Featured images can be used in the cover block.' ); ?></p>
 				<p><?php _e( 'New featured image sizing controls make it easier to get the results you want.' ); ?></p>
 			</div>
 			<div class="column">
 				<div class="about__image">
-					<img src="https://make.wordpress.org/core/files/2022/05/about-60-sub-feature-2.png" alt="" />
+					<img src="https://s.w.org/images/core/6.0/about-60-sub-feature-2.png" alt="" />
 				</div>
 				<p><?php _e( 'While editing a template, at the root, or between blocks, the quick inserter shows you patterns and template parts to help you work faster and discover new layout options.' ); ?></p>
 			</div>
 			<div class="column">
 				<div class="about__image">
-					<img src="https://make.wordpress.org/core/files/2022/05/about-60-sub-feature-3.png" alt="" />
+					<img src="https://s.w.org/images/core/6.0/about-60-sub-feature-3.png" alt="" />
 				</div>
 				<p><?php _e( 'The query block supports filtering on multiple authors, support for custom taxonomies, and support for customizing what is shown when there are no results.' ); ?></p>
 			</div>
 		</div>
 
 		<div class="about__section has-2-columns is-wider-left">
-			<div class="column about__image is-vertically-aligned-center">
-				<img src="https://make.wordpress.org/core/files/2022/05/about-60-integrated-patterns.png" alt="" />
+			<div class="column about__image is-vertically-aligned-top">
+				<img src="https://s.w.org/images/core/6.0/about-60-integrated-patterns.png" alt="" />
 			</div>
 			<div class="column">
 				<h3>
@@ -158,14 +154,14 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php _e( 'New keyboard shortcuts enable you to select multiple blocks from the list view, modify them in bulk, and drag-and-drop them within the list. List View can be opened and closed easily; it comes collapsed by default and it automatically expands to the current selection whenever you select a block.' ); ?>
 				</p>
 			</div>
-			<div class="column about__image is-vertically-aligned-center">
-				<img src="https://make.wordpress.org/core/files/2022/05/about-60-list-view.png" alt="" />
+			<div class="column about__image is-vertically-aligned-top">
+				<img src="https://s.w.org/images/core/6.0/about-60-list-view.png" alt="" />
 			</div>
 		</div>
 
 		<div class="about__section has-2-columns is-wider-left">
-			<div class="column about__image is-vertically-aligned-center">
-				<img src="https://make.wordpress.org/core/files/2022/05/about-60-block-locking-controls.png" alt="" />
+			<div class="column about__image is-vertically-aligned-top">
+				<img src="https://s.w.org/images/core/6.0/about-60-block-locking-controls.png" alt="" />
 			</div>
 			<div class="column">
 				<h3>
@@ -176,6 +172,8 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				</p>
 			</div>
 		</div>
+
+		<hr class="is-large" />
 
 		<div class="about__section" style="margin-bottom:0;">
 			<div class="column">
@@ -208,10 +206,10 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			</div>
 			<div class="column">
 				<div class="about__image aligncenter">
-					<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<circle cx="20.5" cy="20" r="12" fill="#fff"/>
-						<circle cx="20.5" cy="20" r="12" fill="url(#a)"/>
-						<circle cx="20.5" cy="20" r="12" stroke="#1E1E1E" stroke-width="2"/>
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<circle cx="16" cy="16" r="12" fill="#fff"/>
+						<circle cx="16" cy="16" r="12" fill="url(#a)"/>
+						<circle cx="16" cy="16" r="12" stroke="#1E1E1E" stroke-width="2"/>
 						<defs>
 							<pattern id="a" patternContentUnits="objectBoundingBox" width=".385" height=".385">
 								<use xlink:href="#b" transform="scale(.01923)"/>
@@ -256,9 +254,9 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<hr class="is-large" />
 
 		<div class="about__section has-2-columns is-wider-right">
-			<div class="column about__image is-vertically-aligned-center">
-				<a href="#">
-					<img src="https://make.wordpress.org/core/files/2022/05/about-60-video.png" alt="<?php echo esc_attr( __( 'Exploring WordPress 6.0 video' ) ); ?>" />
+			<div class="column about__image is-vertically-aligned-top">
+				<a href="https://www.youtube.com/watch?v=oe452WcY7fA">
+					<img src="https://s.w.org/images/core/6.0/about-60-video.png?ver=6.0" alt="<?php echo esc_attr( __( 'Exploring WordPress 6.0 video' ) ); ?>" />
 				</a>
 			</div>
 			<div class="column">
@@ -276,7 +274,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					printf(
 						/* translators: %s: 6.0 overview video link. */
 						__( 'See WordPress 6.0 in action! <a href="%s">Watch a brief overview video</a> highlighting some of the major features debuting in WordPress 6.0.' ),
-						'#'
+						'https://www.youtube.com/watch?v=oe452WcY7fA'
 					);
 					?>
 				</p>
@@ -284,7 +282,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		</div>
 
 		<div class="about__section has-3-columns">
-			<div class="column">
+			<div class="column" style="padding-top:0">
 				<p>
 					<?php
 					printf(
@@ -296,24 +294,29 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					?>
 				</p>
 			</div>
-			<div class="column">
+			<div class="column" style="padding-top:0">
 				<p>
 					<?php
 					printf(
-						/* translators: %s: WordPress 6.0 Field Guide link. */
+						/* translators: %s: WordPress Field Guide link. */
 						__( 'Check out the latest version of the <a href="%s">WordPress Field Guide</a>. It is overflowing with detailed developer notes to help you build with WordPress.' ),
 						__( 'https://make.wordpress.org/core/2022/05/03/wordpress-6-0-field-guide/' )
 					);
 					?>
 				</p>
 			</div>
-			<div class="column">
+			<div class="column" style="padding-top:0">
 				<p>
 					<?php
 					printf(
-						/* translators: %s: WordPress 6.0 Release Notes link. */
-						__( '<a href="%s">Read the WordPress 6.0 Release Notes</a> for more information on the included enhancements and issues fixed, installation information, developer notes and resources, release contributors, and the list of file changes in this release.' ),
-						'#'
+						/* translators: 1: WordPress Release Notes link, 2: WordPress version number. */
+						__( '<a href="%1$s">Read the WordPress %2$s Release Notes</a> for more information on the included enhancements and issues fixed, installation information, developer notes and resources, release contributors, and the list of file changes in this release.' ),
+						sprintf(
+							/* translators: %s: WordPress version number. */
+							esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
+							'6-0'
+						),
+						'6.0'
 					);
 					?>
 				</p>
@@ -373,3 +376,9 @@ _n_noop(
 
 /* translators: %s: Documentation URL. */
 __( 'For more information, see <a href="%s">the release notes</a>.' );
+
+/* translators: 1: WordPress version number, 2: Link to update WordPress */
+__( 'Important! Your version of WordPress (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href="%2$s">update to the latest version of WordPress</a>.' );
+
+/* translators: 1: WordPress version number, 2: Link to update WordPress */
+__( 'Important! Your version of WordPress (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href="%2$s">update to the latest version of WordPress</a>.' );
